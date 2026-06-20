@@ -91,7 +91,7 @@ export default class ApiService {
     return result.data;
   }
 
-  static async getAvailableRoomsByDataAndType(
+  static async getAvailableRoomsByDateAndType(
     checkInDate,
     checkOutDate,
     roomType,
