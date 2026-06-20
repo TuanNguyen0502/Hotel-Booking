@@ -19,35 +19,37 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar-brand">
-        <NavLink to="/home">Hotel Booking</NavLink>
+        <NavLink to="/home" activeclassname="active">
+          Hotel Booking
+        </NavLink>
       </div>
       <ul className="navbar-ul">
         <li>
-          <NavLink to="/home" activeClass="active">
+          <NavLink to="/home" activeclassname="active">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/rooms" activeClass="active">
+          <NavLink to="/rooms" activeclassname="active">
             Rooms
           </NavLink>
         </li>
         <li>
-          <NavLink to="/find-booking" activeClass="active">
+          <NavLink to="/find-booking" activeclassname="active">
             Find My Booking
           </NavLink>
         </li>
 
         {isAuthenticated && (
           <li>
-            <NavLink to="/profile" activeClass="active">
+            <NavLink to="/profile" activeclassname="active">
               Profile
             </NavLink>
           </li>
         )}
         {isAdmin && (
           <li>
-            <NavLink to="/admin" activeClass="active">
+            <NavLink to="/admin" activeclassname="active">
               Admin
             </NavLink>
           </li>
@@ -56,12 +58,12 @@ function Navbar() {
         {!isAuthenticated && (
           <>
             <li>
-              <NavLink to="/login" activeClass="active">
+              <NavLink to="/login" activeclassname="active">
                 Login
               </NavLink>
             </li>
             <li>
-              <NavLink to="/register" activeClass="active">
+              <NavLink to="/register" activeclassname="active">
                 Register
               </NavLink>
             </li>

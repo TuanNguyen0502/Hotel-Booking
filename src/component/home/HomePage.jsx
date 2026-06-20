@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-constHomePage = () => {
+const HomePage = () => {
   return (
     <div className="home">
       <section>
@@ -75,3 +75,5 @@ constHomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
